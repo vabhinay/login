@@ -1,0 +1,10 @@
+@import '../../../assets/scss/variable';
+footer{
+    background: $secondry-color;
+    height: 30px;
+    clear: both;
+    p{
+        color: $ternary-color;
+        margin-left: 45%;
+    }
+}

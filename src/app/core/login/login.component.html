@@ -1,0 +1,16 @@
+<form class="form-container">
+  <ul class='errorMsg' *ngIf="errorMsgList">
+    <li *ngFor="let errorMsg of errorMsgList">{{errorMsg}}</li>
+  </ul>
+  <div class = form-elements>
+    <label>Username :</label>
+    <input type = 'text' required name = 'userName' [(ngModel)]= 'login.userName'/>
+  </div>
+  <div class = form-elements>
+    <label>Password :</label>
+    <input type = 'password' required name = 'password' [(ngModel)]= 'login.password'/>
+    </div>
+  <div class = form-elements>
+    <input type = 'submit' (click) = 'signIn()' value = 'SignIn'/>
+      </div>
+</form>
